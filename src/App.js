@@ -1,11 +1,7 @@
 import './App.css';
 import {
   Box,
-  Accordion,
-  AccordionItem,
-  AccordionButton,
-  AccordionPanel,
-  AccordionIcon,
+  Button
 } from '@chakra-ui/react'
 
 
@@ -15,41 +11,10 @@ function App() {
       <Box bg='brand.primary'>
         Hola Mundo
       </Box>
-      <Accordion>
-        <AccordionItem>
-          <h2>
-            <AccordionButton>
-              <Box as="span" flex='1' textAlign='left'>
-                Section 1 title
-              </Box>
-              <AccordionIcon />
-            </AccordionButton>
-          </h2>
-          <AccordionPanel pb={4}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat.
-          </AccordionPanel>
-        </AccordionItem>
+      <Button>Este es un boton por defecto</Button>
+      <Button colorScheme='teal' size='lg'>Este es un boton customizado</Button>
+      <Button variant='outline' size='lg'>Este es un boton </Button>
 
-        <AccordionItem>
-          <h2>
-            <AccordionButton>
-              <Box as="span" flex='1' textAlign='left'>
-                Section 2 title
-              </Box>
-              <AccordionIcon />
-            </AccordionButton>
-          </h2>
-          <AccordionPanel pb={4}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat.
-          </AccordionPanel>
-        </AccordionItem>
-      </Accordion>
     </div>
   );
 }
