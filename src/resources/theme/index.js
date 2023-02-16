@@ -2,7 +2,13 @@
 import { extendTheme } from "@chakra-ui/react"
 
 // 2. Call `extendTheme` and pass your custom values
-const colors = {
+
+export const theme = extendTheme({  })
+
+//export const theme = extendTheme({ colors, components: { Button } })
+
+
+/* const colors = {
     brand: {
         primary: "#aafafc",
         secondary: "#d3456a",
@@ -32,9 +38,7 @@ const Button = {
             fontWeight:'bold'
         }
     }
-}
-
-export const theme = extendTheme({ colors, components: { Button } })
+} */
 
 
 
