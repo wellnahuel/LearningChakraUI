@@ -5,7 +5,7 @@ import { Box } from '@chakra-ui/react'
 function App() {
   return (
     <div className="App">
-      <Box>
+      <Box bg='brand.primary'>
         Hola Mundo
       </Box>
     </div>
