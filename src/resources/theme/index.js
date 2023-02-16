@@ -1,9 +1,39 @@
 // 1. Import `extendTheme`
 import { extendTheme } from "@chakra-ui/react"
 
+const fonts = {
+    heading: 'Roboto, sans-serif',
+    body: 'Roboto, sans-serif'
+}
+
+const Button = {
+    variants: {
+        outline: {
+            textTransform:'uppercase',
+            borderRadius:'0',
+            color:'white',
+            letterSpacing:'1px',
+            fontWeight: 'light',
+            _hover: { color:'black' }
+        }
+    }
+}
+
+const Heading = {
+    variants: {
+        banner: {
+            textTransform: 'uppercase',
+            fontWeight: 'light',
+            letterSpacing: '5px',
+            color: 'white'
+        }
+    }
+}
+
+
 // 2. Call `extendTheme` and pass your custom values
 
-export const theme = extendTheme({  })
+export const theme = extendTheme({ fonts, components: { Button, Heading } })
 
 //export const theme = extendTheme({ colors, components: { Button } })
 
