@@ -14,6 +14,8 @@ function App() {
       <Button>Este es un boton por defecto</Button>
       <Button colorScheme='teal' size='lg'>Este es un boton customizado</Button>
       <Button variant='outline' size='lg'>Este es un boton </Button>
+      <Button variant='cta' size='lg'>Este es un boton </Button>
+
 
     </div>
   );

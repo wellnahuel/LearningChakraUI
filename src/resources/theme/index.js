@@ -7,17 +7,29 @@ const colors = {
         primary: "#aafafc",
         secondary: "#d3456a",
         // ...
-        accent: "#1a202c",
+        accent: "#aa202c",
     },
 }
 
 const Button = {
     baseStyle: {
         fontWeight: "light",
+        borderRadius: '30px',
+        _hover: {
+            boxShadow: '5px 5px 15px 5px rgba(0,0,0,0.18)'
+        }
     },
-    sizes: {
-        lg: {
-            fontWeight: "bold",
+    variants: {
+        outline: {
+            _hover: {
+                bg: 'brand.primary',
+                borderColor: 'brand.primary'
+            }
+        },
+        'cta': {
+            textTransform: 'uppercase',
+            bg: 'brand.accent',
+            fontWeight:'bold'
         }
     }
 }
